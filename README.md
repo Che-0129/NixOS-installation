@@ -5,19 +5,25 @@
 $ sudo -i
 ```
 
+## 日本語キーボードに変更
+```
+# loadkeys jp106
+```
+
 ## Wi-Fiに接続
 ```
 # systemctl start wpa_supplicant
 # wpa_cli
-  > add_network
-  0
-  > set_network 0 ssid "myhomenetwork"
-  OK
-  > set_network 0 psk "mypassword"
-  OK
-  > enable_network 0
-  OK
-  > quit
+
+> add_network
+0
+> set_network 0 ssid "myhomenetwork"
+OK
+> set_network 0 psk "mypassword"
+OK
+> enable_network 0
+OK
+> quit
 ```
 
 ## パーティション切り
