@@ -29,7 +29,7 @@ OK
 ## パーティション切り
 ```
 # sgdisk -Z /dev/nvme0n1
-# sgdisk -n 1::+512M -n 2:: -t 1:ef00 -t 2:8304 -c 1:"EFI system partition" -c 2:"Linux x86-64 root (/)" /dev/nvme0n1
+# sgdisk -n 1::+512M -n 2:: -t 1:ef00 -t 2:8304 /dev/nvme0n1
 ```
 
 ## フォーマット
