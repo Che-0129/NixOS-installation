@@ -44,12 +44,6 @@ OK
 # mount -m -o umask=077 /dev/nvme0n1p1 /mnt/boot
 ```
 
-## スワップファイル作成、マウント
-```
-# btrfs fi m -s 8g -U clear /mnt/swapfile
-# swapon /mnt/swapfile
-```
-
 ## `configuration.nix`生成
 ```
 # nixos-generate-config --root /mnt
